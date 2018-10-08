@@ -22,6 +22,46 @@ def start_of_word(string, int)
 end 
 
 def first_word(string)
-	
+	string.split[0]
 
 end 
+
+# def titleize(string)
+# 	ind = 0 
+# 	spl = string.split(" ")
+
+# 	 spl.map {|word| 
+# 		# if word.chars 
+# 		if word.chars.length > 3
+# 			word.capitalize
+# 		elsif string.split[ind] == word
+# 			word.capitalize
+
+# 		else 
+# 			word
+# 		end 
+# 		}.join(" ")
+# 		# print spl[0]
+# end
+
+# titleize("theasf prita the bahvy")
+
+def titleize(string)
+	ind = 0 
+	spl = string.split(" ")
+	spl[0] = spl[0].capitalize
+	# print spl
+	spl.map {|word| 
+		# if word.chars 
+		if word.chars.length > 3
+			word.capitalize
+		# elsif string.split[ind] == word
+		# 	word.capitalize
+
+		else 
+			word
+		end 
+		}.join(" ")
+		# print spl[0]
+end
+
